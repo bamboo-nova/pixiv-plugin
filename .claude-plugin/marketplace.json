@@ -1,0 +1,22 @@
+{
+  "name": "pixiv-plugin",
+  "owner": {
+    "name": "bamboo-nova"
+  },
+  "plugins": [
+    {
+      "name": "pixiv-plugin",
+      "source": "./",
+      "description": "Pixivイラスト検索・トレンド取得・ダウンロード・AI生成フィルタリング対応MCPプラグイン",
+      "version": "0.2.0",
+      "keywords": [
+        "pixiv",
+        "illustration",
+        "artwork",
+        "mcp",
+        "download",
+        "ai-filter"
+      ]
+    }
+  ]
+}

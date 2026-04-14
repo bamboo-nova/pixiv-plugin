@@ -1,0 +1,13 @@
+.venv
+.git
+.claude
+.claude-plugin
+.ruff_cache
+__pycache__
+downloads
+.env
+.env.*
+*.md
+skills
+commands
+setup_token.py

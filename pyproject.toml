@@ -1,0 +1,32 @@
+[project]
+name = "pixiv-plugin"
+version = "0.1.0"
+description = "Pixiv MCP Server - イラスト検索・トレンド・ダウンロード・AI生成フィルタリング対応"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.9.0",
+    "pixivpy3>=3.7.5",
+    "httpx>=0.27.0",
+    "gppt>=4.3.0",
+]
+
+[project.scripts]
+pixiv-setup = "setup_token:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+]
+
+[tool.ruff]
+exclude = [".ruff_cache", ".venv"]
+line-length = 150
+indent-width = 4
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["F", "B", "I", "E", "W"]
+ignore = []
+fixable = ["ALL"]

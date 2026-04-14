@@ -1,0 +1,30 @@
+{
+  "name": "pixiv-plugin",
+  "version": "0.2.0",
+  "description": "Pixivイラスト検索・トレンド取得・ダウンロード・AI生成フィルタリング対応MCPプラグイン",
+  "author": {
+    "name": "bamboo-nova"
+  },
+  "keywords": ["pixiv", "illustration", "artwork", "mcp", "download", "ai-filter"],
+  "mcpServers": {
+    "pixiv-artwork": {
+      "command": "uv",
+      "args": ["run", "--project", "${CLAUDE_PLUGIN_ROOT}", "${CLAUDE_PLUGIN_ROOT}/main.py"],
+      "cwd": "${CLAUDE_PLUGIN_ROOT}",
+      "env": {
+        "UV_CACHE_DIR": "${CLAUDE_PLUGIN_DATA}/.uv-cache",
+        "VIRTUAL_ENV": "${CLAUDE_PLUGIN_DATA}/.venv",
+        "MCP_TRANSPORT": "stdio",
+        "PIXIV_REFRESH_TOKEN": "${user_config.PIXIV_REFRESH_TOKEN}"
+      }
+    }
+  },
+  "userConfig": {
+    "PIXIV_REFRESH_TOKEN": {
+      "title": "Pixiv Refresh Token",
+      "description": "PixivのRefreshトークン",
+      "type": "string",
+      "sensitive": true
+    }
+  }
+}
