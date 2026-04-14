@@ -141,6 +141,8 @@ Run the following in a Claude Code session:
 
 # Install the plugin
 /plugin install pixiv-plugin@pixiv-artwork
+
+# Once you've installed the plugin, select “pixiv-plugin” under /plugin and add the refresh token obtained from setup_token.py to the “Configure options” section.
 ```
 
 You can also specify an installation scope:

@@ -161,7 +161,7 @@ Claude Code セッション内で以下を実行します:
 # プラグインをインストール（`pixiv-plugin@<マーケットプレース名>`）
 /plugin install pixiv-plugin@pixiv-plugin
 
-# プラグインをインストールできたら、
+# プラグインをインストールできたら、/pluginでpixiv-pluginを選択して、Configure optionsにsetup_token.pyで取得したリフレッシュトークンを追加してください。
 ```
 
 マーケットプレース名は `marketplace.json` の `name` フィールド（= `pixiv-plugin`）に対応します。
